@@ -50,10 +50,11 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    console.log('checkkkkkkkkkk--', action, thisForm, formData)
+    console.log('checkkkkkkkkkk sd--', action, thisForm, formData)
     fetch(action, {
       method: 'POST',
       body: formData,
+      headers: {'Content-Type': 'application/json'},
     })
     .then(response => {
       console.log('response', response)
