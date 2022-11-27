@@ -54,9 +54,9 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
+      console.log('response', response)
       return response.text();
     })
     .then(data => {
